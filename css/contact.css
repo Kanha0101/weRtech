@@ -1,0 +1,133 @@
+@font-face {
+    font-family: ubn-medium;
+    src: url(../assets/fonts/Ubuntu-Medium.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ubn-medium;
+    background: linear-gradient(#ffdad5, #fff7f9);
+}
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title {
+    display: flex;
+}
+
+.contact-left-title h3 a {
+    position: absolute;
+    margin-left: 40px;
+    height: 40px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #7A4273;
+    font-size: 20xpx;
+    text-align: center;
+    border: 1px solid #00000065;
+    border-radius: 10px;
+    transition: all ease 0.4s;
+}
+
+
+
+.contact-left-title h3 a:hover {
+    background-color: #fa6d86;
+    color: #fff;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+}
+
+hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    font-family: ubn-medium;
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button img {
+    height: 15px;
+}
+
+.contact-right img {
+    width: 500px;
+}
+
+@media (max-width:800px) {
+    .contact-inputs {
+        width: 80vw;
+    }
+
+    .contact-right {
+        display: none;
+    }
+
+    .contact-left-title h3 a {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}

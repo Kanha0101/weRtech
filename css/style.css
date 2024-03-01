@@ -1,0 +1,372 @@
+@font-face {
+    font-family: ubn-medium;
+    src: url(../assets/fonts/Ubuntu-Medium.ttf);
+    font-weight: 400;
+    font-style: normal
+}
+@font-face {
+    font-family: ubn-regular;
+    src: url(../assets/fonts/Ubuntu-Regular.ttf);
+    font-weight: 200;
+    font-style: normal
+}
+@font-face {
+    font-family: ubn-light;
+    src: url(../assets/fonts/Ubuntu-Light.ttf);
+    font-weight: 500;
+    font-style: normal
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ubn-medium;
+    max-width: 100%;
+}
+
+html,
+body {
+    background: linear-gradient(115deg, #7cc4c59c, #d381b4);
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    padding: 0px 30px;
+}
+
+#nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000002f;
+}
+
+
+#nav-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-part3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#nav-part1 h3 {
+    font-size: 16px;
+    font-weight: 500;
+    border: 1.5px solid #00000060;
+    padding: 7px 12px;
+    border-radius: 50px;
+    position: relative;
+}
+
+#nav-part1 i {
+    font-size: 16px;
+    font-weight: 5000;
+    padding: 7px 12px;
+    border-radius: 50px;
+}
+
+#nav-part1 h3 {
+    overflow: hidden;
+}
+
+#nav-part1 h3 a {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+#nav-part1 h3::after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    color: #fff;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+#nav-part1 h3:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-part1 h3 a:hover {
+    color: #fff;
+}
+
+#nav-part3 h4 {
+    padding: 7px 12px;
+    border-radius: 25px;
+    border: 1.5px solid #00000060;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+
+#nav-part3 h4 a {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+#nav-part3 h4::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    color: #fff;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+#nav-part3 h4 a:hover {
+    color: #fff;
+}
+
+#nav-part3 h4:hover::after {
+    border-radius: 0;
+    bottom: 0;
+}
+
+#tagline{
+    font-family: ubn-regular;
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+
+
+#subscribe{
+    position: absolute;
+    top: 15vw;
+    left: 26vw;
+}
+
+#wertech{
+    font-family: ubn-light;
+    font-size: 6vw;
+    display: flex;
+    gap: 2vw;
+    margin-top: -2.5vw;
+    color: #000;
+}
+
+#wertech h1:hover{
+    color: #fff;
+    transition: all ease 0.4s;
+}
+
+#main #subscribe p{
+    font-size: 22px;
+    position: absolute;
+    display: flex;
+    top: 22vw;
+    left: 23vw;
+    display: none;
+}
+
+#main #subscribe h3 a{
+    display: none;
+    padding: 10px 20px;
+    position: absolute;
+    text-decoration: none;
+    color: #000;
+    top: 30vw;
+    left: 43vw;
+    border: 1px solid #000;
+    border-radius: 30px;
+}
+
+img {
+    height: 27vw;
+    width: 20vw;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+}
+
+#img1 {
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+
+#img2 {
+    transform: translate(-50%, -50%) rotate(20deg);
+}
+
+#img3 {
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+#footer {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding: 0px 30px;
+    bottom: 10px;
+}
+
+#links {
+    display: flex;
+    background-color: crimson;
+    justify-content: center;
+}
+
+#links .link img {
+    position: absolute;
+    left: 1270px;
+    height: 32px;
+    /* background-color: crimson; */
+    width: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#links .link #svg3 {
+    position: absolute;
+    left: 97vw;
+}
+
+#links .link #svg2 {
+    position: absolute;
+    left: 94vw;
+}
+
+#links .link #svg1 {
+    position: absolute;
+    left: 91vw;
+}
+
+#nav-part1 img {
+    display: none;
+}
+
+
+@media (max-width:800px) {
+    #nav #nav-part1 h3 {
+        display: none;
+    }
+
+    #nav-part1 h3 {
+        padding: 7px 1px;
+    }
+
+    #nav-part2 h1 {
+        font-size: 23px;
+    }
+
+    #main .sub {
+        font-size: 45px;
+    }
+
+    #main img {
+        height: 280px;
+        width: 180px;
+    }
+
+    #footer #links .link img {
+        height: 28px;
+        width: 28px;
+    }
+
+    #footer #text h4 {
+        font-size: 13px;
+    }
+
+    #footer #links .link #svg3 {
+        position: absolute;
+        left: 360px;
+    }
+
+    #footer #links .link #svg2 {
+        position: absolute;
+        left: 335px;
+    }
+
+    #footer #links .link #svg1 {
+        position: absolute;
+        left: 303px;
+    }
+
+    #tagline{
+        font-family: ubn-regular;
+        font-size: 3vw;
+        font-weight: 500;
+    }
+    
+    
+    #subscribe{
+        position: absolute;
+        top: 70vw;
+        left: 8vw;
+    }
+    
+    #wertech{
+        font-family: ubn-light;
+        font-size: 10vw;
+        display: flex;
+        gap: 2vw;
+        margin-top: -2.5vw;
+        color: #000;
+    }
+    
+    #main #subscribe p{
+        font-size: 22px;
+        position: absolute;
+        display: flex;
+        top: 22vw;
+        left: 23vw;
+        display: none;
+    }
+    
+    #main #subscribe h3 a{
+        display: none;
+        padding: 10px 20px;
+        position: absolute;
+        text-decoration: none;
+        color: #000;
+        top: 30vw;
+        left: 43vw;
+        border: 1px solid #000;
+        border-radius: 30px;
+    }
+    
+    #nav #nav-part1 img {
+        display: flex;
+        height: 35px;
+        width: 35px;
+        border-radius: 5px;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        background-color: crimson;
+        z-index: 10;
+    }
+
+}
