@@ -1,27 +1,25 @@
 @font-face {
     font-family: ubn-medium;
-    src: url(../assets/fonts/Ubuntu-Medium.ttf);
+    src: url(assets\fonts\Ubuntu-Medium.ttf);
     font-weight: 400;
     font-style: normal
 }
 @font-face {
     font-family: ubn-regular;
-    src: url(../assets/fonts/Ubuntu-Regular.ttf);
+    src: url(assets\fonts\Ubuntu-Regular.ttf);
     font-weight: 200;
     font-style: normal
 }
-@font-face {
-    font-family: ubn-light;
-    src: url(../assets/fonts/Ubuntu-Light.ttf);
-    font-weight: 500;
-    font-style: normal
-}
+
+
 
 * {
     margin: 0;
     padding: 0;
-    font-family: ubn-medium;
     max-width: 100%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 html,
