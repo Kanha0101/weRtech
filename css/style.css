@@ -386,4 +386,11 @@ img {
         z-index: 10;
     }
 
+    #loader h3 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3vw;
+    }
+
 }
