@@ -1,17 +1,9 @@
 @font-face {
-    font-family: ubn-medium;
-    src: url(assets\fonts\Ubuntu-Medium.ttf);
+    font-family: nbs;
+    src: url(assets\fonts\NBInternationalProBoo.woff2);
     font-weight: 400;
     font-style: normal
 }
-@font-face {
-    font-family: ubn-regular;
-    src: url(assets\fonts\Ubuntu-Regular.ttf);
-    font-weight: 200;
-    font-style: normal
-}
-
-
 
 * {
     margin: 0;
@@ -151,34 +143,61 @@ body {
     bottom: 0;
 }
 
-#tagline{
-    font-family: ubn-regular;
-    font-size: 1.4vw;
+#loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: #000;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 5px;
+}
+
+#loader h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2vw;
+}
+
+#tagline {
+    font-family: "Ubuntu", sans-serif;
     font-weight: 500;
+    font-style: normal;
+    font-size: 1.4vw;
 }
 
 
-#subscribe{
+#subscribe {
     position: absolute;
     top: 15vw;
     left: 26vw;
 }
 
-#wertech{
+#wertech {
     font-family: ubn-light;
     font-size: 6vw;
     display: flex;
     gap: 2vw;
     margin-top: -2.5vw;
     color: #000;
+    gap: 30px;
 }
 
-#wertech h1:hover{
+#wertech h1 span:hover {
     color: #fff;
     transition: all ease 0.4s;
 }
 
-#main #subscribe p{
+#wertech h1 span{
+    display: inline-block;
+}
+
+#main #subscribe p {
     font-size: 22px;
     position: absolute;
     display: flex;
@@ -187,7 +206,7 @@ body {
     display: none;
 }
 
-#main #subscribe h3 a{
+#main #subscribe h3 a {
     display: none;
     padding: 10px 20px;
     position: absolute;
@@ -312,20 +331,20 @@ img {
         left: 303px;
     }
 
-    #tagline{
+    #tagline {
         font-family: ubn-regular;
         font-size: 3vw;
         font-weight: 500;
     }
-    
-    
-    #subscribe{
+
+
+    #subscribe {
         position: absolute;
         top: 70vw;
         left: 8vw;
     }
-    
-    #wertech{
+
+    #wertech {
         font-family: ubn-light;
         font-size: 10vw;
         display: flex;
@@ -333,8 +352,8 @@ img {
         margin-top: -2.5vw;
         color: #000;
     }
-    
-    #main #subscribe p{
+
+    #main #subscribe p {
         font-size: 22px;
         position: absolute;
         display: flex;
@@ -342,8 +361,8 @@ img {
         left: 23vw;
         display: none;
     }
-    
-    #main #subscribe h3 a{
+
+    #main #subscribe h3 a {
         display: none;
         padding: 10px 20px;
         position: absolute;
@@ -354,7 +373,7 @@ img {
         border: 1px solid #000;
         border-radius: 30px;
     }
-    
+
     #nav #nav-part1 img {
         display: flex;
         height: 35px;
